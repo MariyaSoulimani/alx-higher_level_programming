@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for num in range(99):
-    if num < 99:
-        print("{}{}".format(0, num) if num < 10 else '{}'.format(num), end=', ')
+for n in range(0, 100):
+    if n < 99:
+        print('{}{}'.format(0, n) if n < 10 else '{}'.format(n), end=', ')
     else:
         print(99)
