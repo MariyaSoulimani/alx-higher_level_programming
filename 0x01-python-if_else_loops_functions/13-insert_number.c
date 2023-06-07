@@ -1,12 +1,5 @@
 #include "lists.h"
 
-/**
- * insert_node - Inserts a node into a sorted linked list
- * @head: Pointer to the head of the linked list
- * @number: Number to be inserted
- *
- * Return: Address of the newly inserted node, or NULL on failure
- */
 listint_t *insert_node(listint_t **head, int number)
 {
     listint_t *node = *head, *new;
