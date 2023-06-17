@@ -6,8 +6,8 @@ def roman_to_int(roman_string):
     total = 0
     prev_value = 0
     for char in roman_string:
-        if char in dic:
-            current_value = dic[char]
+        if char in roman_dict:
+            current_value = roman_dict[char]
             if current_value > prev_value:
                 total += current_value - 2 * prev_value
             else:
