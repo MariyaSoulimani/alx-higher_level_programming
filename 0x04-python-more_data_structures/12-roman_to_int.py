@@ -7,12 +7,12 @@ def roman_to_int(roman_string):
     prev_value = 0
     for c in roman_string:
         if c in roman_dict:
-            curr_value = roman_dict[c]
-            if curr_value > prev_value:
-                result += curr_value - 2 * prev_value
+            current_value = roman_dict[c]
+            if current_value > prev_value:
+                result += current_value - 2 * prev_value
             else:
-                result += curr_value
-            prev_value = curr_value
+                result += current_value
+            prev_value = current_value
         else:
             return (0)
     return (result)
